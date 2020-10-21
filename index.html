@@ -6,6 +6,39 @@
     rel="stylesheet"
   />
   <style>
+ 
+.column11 {
+  float: left;
+  width: 50%;
+  padding: 0px;
+ 
+  
+}
+.column22 {
+  float: left;
+
+  width: 50%;
+  padding: 0px;
+    
+
+  
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column11 {
+    width: 100%;
+  }
+  .column22 {
+    width: 100%;
+  }
+}
     * {
       box-sizing: border-box;
     }
@@ -25,7 +58,7 @@
       margin-right: 20px;
       font-family: Raleway;
       padding: 40px;
-      width: 30%;
+      width: 50%;
       min-width: 300px;
       float: right;
       border-radius: 10px;
@@ -197,6 +230,143 @@
 
 
       <!-- 5th page -->
+<div class="tab">
+          <h1 style="color:#3167B1;margin-bottom: 60px;">New Account Please Enter Your details </h1>
+        <p>
+           First Name
+          <input
+            placeholder="Dr."
+            oninput="this.className = ''"
+            name="fname"
+          />
+        </p>
+        <p>
+          Last Name
+          <input
+            placeholder="Last name"
+            oninput="this.className = ''"
+            name="lname"
+          />
+        </p>
+        
+        <p>
+            Email ID
+          <input placeholder="E-mail ID" oninput="this.className = ''" name="email"></p>
+        <p>
+            City
+           <input
+             placeholder="City"
+             oninput="this.className = ''"
+             name="City"
+           />
+         </p>
+         <p>
+           Set Password<input placeholder="Password..." oninput="this.className = ''" name="pword" type="password"></p>
+      </div>
+
+      <!-- 6th page -->
+<div class="tab">
+          <h1 style="color:#3167B1;margin-bottom: 60px;">congratulations! You are now part of a global knowledge platform for Doctors  </h1>
+          
+        <div class="row">
+  <div class="column11">
+  
+     
+  <img src="pic_trulli.jpg" alt="Trulli" width="500" height="333">
+    
+  </div>
+  
+  <div class="column22">
+   <p>Profession</p>
+
+  
+  
+  
+   <input type="radio" id="Practitioner" name="Practitioner" value="Practitioner" style=" padding: 0px;
+      width: auto;
+      font-size: 17px;
+      font-family: Raleway;
+      border: 0px solid #aaaaaa;
+      background-color:white;">
+  <label for="male" >Medical Practitioner</label><br>
+  
+  
+  <input type="radio" id="Student" name="Student" value="Student" style=" padding: 0px;
+      width: auto;
+      font-size: 17px;
+      font-family: Raleway;
+      border: 0px solid #aaaaaa;
+      background-color:white;">
+  <label for="female">PG Student</label><br>
+  
+    <input type="radio" id="Student" name="Student" value="Student"style=" padding: 0px;
+      width: auto;
+      font-size: 17px;
+      font-family: Raleway;
+      border: 0px solid #aaaaaa;
+      background-color:white;">
+  <label for="female">UG Student</label><br>
+  
+  
+  <input type="radio" id="other" name="other" value="other" style=" padding: 0px;
+      width: auto;
+      font-size: 17px;
+      font-family: Raleway;
+      border: 0px solid #aaaaaa;
+      background-color:white;">
+  <label for="other">Other</label>
+
+  </div>
+</div>  
+          
+          
+     
+   
+            <p>Speciality
+          <input placeholder="speciality" oninput="this.className = ''" name="speciality"></p>
+           <p>
+            Board Reg. No
+          <input placeholder="E-mail ID" oninput="this.className = ''" name="email"></p>
+       
+      </div>
+
+
+ <!-- 5th page -->
+<div class="tab">
+          <h1 style="color:#3167B1;margin-bottom: 60px;">New Account Please Enter Your details </h1>
+        <p>
+           First Name
+          <input
+            placeholder="Dr."
+            oninput="this.className = ''"
+            name="fname"
+          />
+        </p>
+        <p>
+          Last Name
+          <input
+            placeholder="Last name"
+            oninput="this.className = ''"
+            name="lname"
+          />
+        </p>
+        
+        <p>
+            Email ID
+          <input placeholder="E-mail ID" oninput="this.className = ''" name="email"></p>
+        <p>
+            City
+           <input
+             placeholder="City"
+             oninput="this.className = ''"
+             name="City"
+           />
+         </p>
+       
+      </div>
+
+
+
 
       <div style="overflow: auto;">
         <div style="float: center;">
