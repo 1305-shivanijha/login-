@@ -219,6 +219,12 @@ input {
     .slider.round:before {
       border-radius: 50%;
     }
+        .userInput{
+	display: flex;
+	justify-content: center;
+}
+
+
   </style>
   <body>
     <div class="container">
@@ -248,7 +254,70 @@ input {
       <p style="margin-top: 30px;">on clicking next , an otp will be sent to this number</p>
       </div>
       
+      <!----otp-->
       
+          <div class="tab">
+        <p style="color:#3167B1;margin-bottom: 20px;text-align:center;font-size:20px;">Verification</p>
+         <p style="color:black;margin-bottom: 20px;text-align:center;font-size:15px;">We’ve sent a six digit OTP on ******5199</p>
+<p style="color:black;margin-bottom: 0px;text-align:center;font-size:15px;">Enter OTP</p>
+        <div class="userInput">
+        
+			<input type="text" id='ist' maxlength="1" onkeyup="clickEvent(this,'sec')" style="margin: 4px;
+	height: 35px;
+	width: 35px;
+	border: none;
+	border-radius: 5px;
+	text-align: center;
+	font-family: arimo;
+	font-size: 1.2rem;
+	background: #eef2f3;">
+			<input type="text" id="sec" maxlength="1" onkeyup="clickEvent(this,'third')" style="margin: 4px;
+	height: 35px;
+	width: 35px;
+	border: none;
+	border-radius: 5px;
+	text-align: center;
+	font-family: arimo;
+	font-size: 1.2rem;
+	background: #eef2f3;">
+			<input type="text" id="third" maxlength="1" onkeyup="clickEvent(this,'fourth')" style="margin: 4px;
+	height: 35px;
+	width: 35px;
+	border: none;
+	border-radius: 5px;
+	text-align: center;
+	font-family: arimo;
+	font-size: 1.2rem;
+	background: #eef2f3;">
+			<input type="text" id="fourth" maxlength="1" onkeyup="clickEvent(this,'fifth')" style="margin: 4px;
+	height: 35px;
+	width: 35px;
+	border: none;
+	border-radius: 5px;
+	text-align: center;
+	font-family: arimo;
+	font-size: 1.2rem;
+	background: #eef2f3;">
+			<input type="text" id="fifth" maxlength="1" style="margin: 4px;
+	height: 35px;
+	width: 35px;
+	border: none;
+	border-radius: 5px;
+	text-align: center;
+	font-family: arimo;
+	font-size: 1.2rem;
+	background: #eef2f3;">
+		</div>
+		<p style="color:black;margin-top: 20px;text-align:center;font-size:15px;">You should receive an OTP in the next 57 seconds</p>
+	
+    <script>
+    function clickEvent(first,last){
+			if(first.value.length){
+				document.getElementById(last).focus();
+			}
+		}
+    </script>
+      </div>
       
       
       
